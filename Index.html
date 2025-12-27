@@ -3,18 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="FrameLab - Premium video editing agency specializing in cinematic storytelling, documentary production, and commercial content. Transform your vision into stunning visuals.">
-<meta name="keywords" content="video editing agency, professional video production, cinematic editing, documentary production, commercial video, corporate videos, content creation agency">
-<meta name="author" content="FrameLab">
-<meta property="og:title" content="FrameLab - Premium Video Editing Agency">
-<meta property="og:description" content="Transform your vision into stunning visuals. Professional video editing services for brands, creators, and businesses worldwide.">
-<meta property="og:type" content="website">
-<title>FrameLab - Premium Video Editing Agency | Cinematic Storytelling</title>
+<meta name="description" content="FrameLab - Build your personal brand with cinematic storytelling. Professional content creation that makes you stand out and attract opportunities.">
+<meta name="keywords" content="personal brand, content creation, personal branding, video content, brand building, social media content">
+<title>FrameLab - Build Your Personal Brand | Stand Out & Attract Opportunities</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="icon" href="Fav.png" type="image/x-icon">
 <style>
 * {
   margin: 0;
@@ -36,7 +31,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(45deg, #000, #001a33, #000, #002447);
+  background: linear-gradient(45deg, #000, #001a4d, #000, #0a1e5c);
   background-size: 400% 400%;
   animation: gradientFlow 20s ease infinite;
 }
@@ -60,7 +55,7 @@ body {
   position: absolute;
   width: 3px;
   height: 3px;
-  background: rgba(59, 130, 246, 0.5);
+  background: rgba(0, 149, 255, 0.5);
   border-radius: 50%;
   animation: float 15s infinite;
 }
@@ -94,25 +89,8 @@ nav.scrolled {
   padding: 20px 80px;
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
-}
-
-.logo {
-  font-size: 28px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  cursor: pointer;
-  transition: transform 0.3s;
-  padding-left: 5px;
-}
-
-.logo:hover {
-  transform: scale(1.05);
+  border-bottom: 1px solid rgba(0, 149, 255, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 149, 255, 0.1);
 }
 
 .logo-image {
@@ -149,7 +127,7 @@ nav.scrolled {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  background: linear-gradient(135deg, #0095ff, #00d4ff);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -159,7 +137,7 @@ nav.scrolled {
 
 .cta-btn {
   padding: 14px 32px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #0095ff 0%, #0077cc 100%);
   border-radius: 50px;
   font-weight: 700;
   font-size: 14px;
@@ -177,7 +155,7 @@ nav.scrolled {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #0077cc 0%, #00d4ff 100%);
   transition: left 0.5s;
   z-index: -1;
 }
@@ -188,7 +166,7 @@ nav.scrolled {
 
 .cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 149, 255, 0.4);
 }
 
 .hero {
@@ -196,7 +174,6 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 150px 20px 100px;
   position: relative;
   overflow: hidden;
@@ -210,7 +187,7 @@ nav.scrolled {
   transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 149, 255, 0.15), transparent 70%);
   animation: pulse 4s ease-in-out infinite;
 }
 
@@ -226,16 +203,25 @@ nav.scrolled {
 }
 
 .hero-content {
-  max-width: 1100px;
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
   position: relative;
   z-index: 2;
+}
+
+.hero-text {
+  text-align: left;
 }
 
 .hero-badge {
   display: inline-block;
   padding: 10px 25px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(0, 149, 255, 0.1);
+  border: 1px solid rgba(0, 149, 255, 0.3);
   border-radius: 50px;
   font-size: 13px;
   letter-spacing: 2px;
@@ -246,48 +232,38 @@ nav.scrolled {
 }
 
 .hero h1 {
-  font-size: clamp(48px, 10vw, 96px);
+  font-size: clamp(40px, 8vw, 72px);
   font-weight: 900;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   margin-bottom: 30px;
   line-height: 1.1;
   animation: fadeInUp 1s ease 0.4s both;
 }
 
 .hero h1 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #0095ff 0%, #00d4ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  animation: shimmer 3s infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.5); }
 }
 
 .hero-subtitle {
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(16px, 2.5vw, 20px);
   color: #aaa;
-  margin-bottom: 50px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 40px;
+  line-height: 1.8;
   animation: fadeInUp 1s ease 0.6s both;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 25px;
-  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
   animation: fadeInUp 1s ease 0.8s both;
 }
 
 .btn-primary, .btn-secondary {
-  padding: 18px 45px;
+  padding: 18px 40px;
   font-size: 16px;
   font-weight: 700;
   border-radius: 50px;
@@ -302,7 +278,7 @@ nav.scrolled {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #0095ff 0%, #0077cc 100%);
   color: #fff;
 }
 
@@ -313,7 +289,7 @@ nav.scrolled {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #0077cc 0%, #00d4ff 100%);
   transition: left 0.5s;
   z-index: -1;
 }
@@ -324,7 +300,7 @@ nav.scrolled {
 
 .btn-primary:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 25px 50px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 25px 50px rgba(0, 149, 255, 0.5);
 }
 
 .btn-secondary {
@@ -337,6 +313,21 @@ nav.scrolled {
   background: rgba(255, 255, 255, 0.1);
   border-color: #fff;
   transform: translateY(-5px);
+}
+
+.hero-video {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  animation: fadeInRight 1s ease 0.6s both;
+  background: transparent;
+}
+
+.hero-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
 }
 
 @keyframes fadeInDown {
@@ -361,200 +352,28 @@ nav.scrolled {
   }
 }
 
-.about-section {
-  padding: 120px 20px;
-  position: relative;
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.about-container {
+.why-section {
+  padding: 120px 20px;
+  background: rgba(0, 149, 255, 0.02);
+  border-top: 1px solid rgba(0, 149, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 149, 255, 0.1);
+}
+
+.why-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-}
-
-.about-container h2 {
-  font-size: clamp(36px, 7vw, 64px);
-  font-weight: 900;
-  margin-bottom: 30px;
-  letter-spacing: -2px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about-container p {
-  font-size: clamp(16px, 2.5vw, 18px);
-  color: #aaa;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.story-box {
-  background: rgba(59, 130, 246, 0.05);
-  border-left: 4px solid #3b82f6;
-  padding: 25px;
-  border-radius: 12px;
-  margin: 30px auto;
-  font-style: italic;
-  max-width: 800px;
-}
-
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 60px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.highlight-box {
-  text-align: center;
-  padding: 40px 20px;
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 16px;
-  transition: all 0.3s;
-}
-
-.highlight-box:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-5px);
-}
-
-.highlight-box i {
-  font-size: 42px;
-  color: #3b82f6;
-  margin-bottom: 20px;
-}
-
-.highlight-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.highlight-box p {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-}
-
-.clients-banner {
-  padding: 100px 20px;
-  background: rgba(59, 130, 246, 0.02);
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-}
-
-.clients-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 60px auto 0;
-  opacity: 0;
-  animation: fadeInUp 1s ease 0.3s both;
-}
-
-.client-logo {
-  position: relative;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-
-.client-logo:hover {
-  transform: translateY(-10px) scale(1.1);
-}
-
-.logo-placeholder {
-  font-size: 28px;
-  font-weight: 900;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(59, 130, 246, 0.2));
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  border-radius: 16px;
-  padding: 30px 45px;
-  color: #fff;
-  letter-spacing: -1px;
-  transition: all 0.4s;
-  backdrop-filter: blur(10px);
-}
-
-.client-logo:hover .logo-placeholder {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.3));
-  border-color: rgba(59, 130, 246, 0.6);
-  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3);
-}
-
-.client-logo-img {
-  max-width: 180px;
-  max-height: 80px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-
-  transition: all 0.4s;
-}
-
-.client-logo:hover .client-logo-img {
-  filter: grayscale(0%) brightness(1);
-  transform: scale(1.05);
-}
-
-.stats-section {
-  padding: 100px 20px;
-  background: rgba(59, 130, 246, 0.05);
-  border-top: 1px solid rgba(59, 130, 246, 0.2);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.stat-item {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.6s;
-}
-
-.stat-item.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.stat-number {
-  font-size: clamp(48px, 8vw, 72px);
-  font-weight: 900;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-}
-
-.stat-label {
-  font-size: 18px;
-  color: #aaa;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.pricing-section {
-  padding: 120px 20px;
-  position: relative;
 }
 
 .section-header {
@@ -575,7 +394,7 @@ nav.scrolled {
   font-weight: 900;
   letter-spacing: -2px;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #0095ff 0%, #00d4ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -586,6 +405,247 @@ nav.scrolled {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.benefit-card {
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 149, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.4s;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.benefit-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefit-card:hover {
+  background: rgba(0, 149, 255, 0.05);
+  border-color: rgba(0, 149, 255, 0.5);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 149, 255, 0.2);
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #0095ff 0%, #0077cc 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.benefit-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+}
+
+.services-section {
+  padding: 120px 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.service-card {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 149, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  background: rgba(0, 149, 255, 0.05);
+  border-color: rgba(0, 149, 255, 0.5);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 149, 255, 0.2);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #0095ff 0%, #0077cc 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.service-card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+}
+
+.trust-section {
+  padding: 120px 20px;
+  background: rgba(0, 149, 255, 0.02);
+  border-top: 1px solid rgba(0, 149, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 149, 255, 0.1);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trust-item {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s;
+}
+
+.trust-item.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.trust-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0095ff 0%, #0077cc 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 20px;
+}
+
+.trust-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.trust-item p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.6;
+}
+
+.process-section {
+  padding: 120px 20px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  position: relative;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 149, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.process-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-step:hover {
+  background: rgba(0, 149, 255, 0.05);
+  border-color: rgba(0, 149, 255, 0.5);
+  transform: translateY(-10px);
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0095ff, #0077cc);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.process-step h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 30px 0 15px;
+}
+
+.process-step p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+}
+
+.pricing-section {
+  padding: 120px 20px;
+  background: rgba(0, 149, 255, 0.02);
+  border-top: 1px solid rgba(0, 149, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 149, 255, 0.1);
 }
 
 .pricing-grid {
@@ -599,7 +659,7 @@ nav.scrolled {
 .pricing-card {
   padding: 45px 35px;
   background: rgba(255, 255, 255, 0.02);
-  border: 2px solid rgba(59, 130, 246, 0.2);
+  border: 2px solid rgba(0, 149, 255, 0.2);
   border-radius: 24px;
   transition: all 0.4s;
   position: relative;
@@ -613,16 +673,16 @@ nav.scrolled {
 }
 
 .pricing-card.featured {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
-  border-color: rgba(59, 130, 246, 0.5);
+  background: linear-gradient(135deg, rgba(0, 149, 255, 0.1), rgba(0, 119, 204, 0.05));
+  border-color: rgba(0, 149, 255, 0.5);
   transform: scale(1.05);
   z-index: 2;
 }
 
 .pricing-card:hover {
-  border-color: rgba(59, 130, 246, 0.6);
+  border-color: rgba(0, 149, 255, 0.6);
   transform: translateY(-15px);
-  box-shadow: 0 30px 80px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 30px 80px rgba(0, 149, 255, 0.25);
 }
 
 .pricing-card.featured:hover {
@@ -634,7 +694,7 @@ nav.scrolled {
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #0095ff, #0077cc);
   color: #fff;
   padding: 8px 25px;
   border-radius: 50px;
@@ -642,7 +702,6 @@ nav.scrolled {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
 
 .pricing-header {
@@ -702,7 +761,7 @@ nav.scrolled {
 }
 
 .pricing-features i {
-  color: #3b82f6;
+  color: #0095ff;
   font-size: 18px;
   min-width: 18px;
 }
@@ -711,7 +770,7 @@ nav.scrolled {
   display: block;
   width: 100%;
   padding: 18px;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #0095ff, #0077cc);
   color: #fff;
   text-align: center;
   border-radius: 50px;
@@ -723,277 +782,76 @@ nav.scrolled {
 
 .pricing-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 149, 255, 0.4);
 }
 
-.services-section {
+.faq-section {
   padding: 120px 20px;
-  background: rgba(59, 130, 246, 0.02);
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1400px;
+.faq-container {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.service-card {
-  padding: 40px;
+.faq-item {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 20px;
-  transition: all 0.4s;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.service-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.service-card:hover {
-  background: rgba(59, 130, 246, 0.05);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2);
-}
-
-.service-icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border: 1px solid rgba(0, 149, 255, 0.2);
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  margin-bottom: 25px;
-  transition: all 0.3s;
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.1) rotate(5deg);
-}
-
-.service-card h4 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.service-card p {
-  font-size: 15px;
-  color: #888;
-  line-height: 1.7;
-}
-
-.portfolio-section {
-  padding: 120px 20px;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.portfolio-card {
-  position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: translateY(50px);
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  text-decoration: none;
-  color: #fff;
-}
-
-.portfolio-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.portfolio-card:hover {
-  transform: translateY(-15px) scale(1.02);
-  border-color: rgba(59, 130, 246, 0.5);
-}
-
-.video-thumbnail {
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #60a5fa 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.video-thumbnail::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  transition: opacity 0.4s;
-}
-
-.portfolio-card:hover .video-thumbnail::before {
-  opacity: 0.3;
-}
-
-.play-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s;
-  z-index: 2;
-}
-
-.play-icon i {
-  color: #000;
-  font-size: 32px;
-  margin-left: 5px;
-}
-
-.portfolio-card:hover .play-icon {
-  transform: translate(-50%, -50%) scale(1.2);
-  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.4);
-}
-
-.portfolio-info {
-  padding: 30px;
-}
-
-.project-category {
-  display: inline-block;
-  padding: 5px 15px;
-  background: rgba(59, 130, 246, 0.2);
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
-}
-
-.portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #fff;
-}
-
-.project-description {
-  font-size: 14px;
-  color: #888;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.portfolio-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.portfolio-link:hover {
-  gap: 14px;
-  color: #3b82f6;
-}
-
-.testimonials-section {
-  padding: 120px 20px;
-  background: rgba(59, 130, 246, 0.02);
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-}
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.testimonial-card {
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 20px;
-  transition: all 0.4s;
-}
-
-.testimonial-card:hover {
-  background: rgba(59, 130, 246, 0.05);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-10px);
-}
-
-.testimonial-stars {
-  color: #3b82f6;
-  font-size: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
-.testimonial-text {
+.faq-item:hover {
+  border-color: rgba(0, 149, 255, 0.4);
+  background: rgba(0, 149, 255, 0.03);
+}
+
+.faq-question {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.faq-question i {
+  color: #0095ff;
   font-size: 16px;
+  transition: transform 0.3s;
+  margin-left: 20px;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 30px 25px 30px;
+}
+
+.faq-answer p {
+  font-size: 15px;
   color: #aaa;
   line-height: 1.8;
-  margin-bottom: 25px;
-  font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.author-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.author-info h5 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.author-info p {
-  font-size: 13px;
-  color: #666;
+  margin: 0;
 }
 
 .contact-section {
@@ -1020,15 +878,6 @@ nav.scrolled {
   color: #aaa;
   margin-bottom: 50px;
   line-height: 1.6;
-}
-
-.contact-divider {
-  text-align: center;
-  margin: 50px 0;
-  color: #666;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .contact-details {
@@ -1099,19 +948,14 @@ nav.scrolled {
 
 footer {
   padding: 80px 20px 40px;
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  border-top: 1px solid rgba(0, 149, 255, 0.1);
   text-align: center;
 }
 
 .footer-logo {
   font-size: 32px;
   font-weight: 900;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #0095ff 0%, #00d4ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
@@ -1146,6 +990,21 @@ footer {
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 20px 20px;
@@ -1165,361 +1024,17 @@ footer {
   .hero {
     padding: 120px 20px 80px;
   }
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-  .highlights-grid {
-    grid-template-columns: 1fr;
-  }
-  .testimonials-grid {
+  .benefits-grid {
     grid-template-columns: 1fr;
   }
   .services-grid {
     grid-template-columns: 1fr;
   }
-}
-
-.animated-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient(45deg, #000, #001a33, #000, #002447);
-  background-size: 400% 400%;
-  animation: gradientFlow 20s ease infinite;
-}
-
-@keyframes gradientFlow {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 25px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-nav.scrolled {
-  padding: 20px 80px;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
-}
-
-.logo-image {
-  height: 40px;
-  width: auto;
-  cursor: pointer;
-  transition: transform 0.3s;
-  filter: invert(1);
-}
-
-.nav-links {
-  display: flex;
-  gap: 50px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.cta-btn {
-  padding: 14px 32px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 150px 20px 100px;
-}
-
-.hero h1 {
-  font-size: clamp(48px, 10vw, 96px);
-  font-weight: 900;
-  letter-spacing: -4px;
-  margin-bottom: 30px;
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-  font-size: clamp(18px, 3vw, 24px);
-  color: #aaa;
-  margin-bottom: 50px;
-}
-
-.btn-primary {
-  padding: 18px 45px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 700;
-}
-
-.clients-banner {
-  padding: 100px 20px;
-  background: rgba(59, 130, 246, 0.02);
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-  overflow: hidden;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-title {
-  font-size: clamp(36px, 7vw, 64px);
-  font-weight: 900;
-  letter-spacing: -2px;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.animated-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient(45deg, #000, #001a33, #000, #002447);
-  background-size: 400% 400%;
-  animation: gradientFlow 20s ease infinite;
-}
-
-@keyframes gradientFlow {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 25px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-nav.scrolled {
-  padding: 20px 80px;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
-}
-
-.logo-image {
-  height: 40px;
-  width: auto;
-  cursor: pointer;
-  transition: transform 0.3s;
-  filter: invert(1);
-}
-
-.nav-links {
-  display: flex;
-  gap: 50px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.cta-btn {
-  padding: 14px 32px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 150px 20px 100px;
-}
-
-.hero h1 {
-  font-size: clamp(48px, 10vw, 96px);
-  font-weight: 900;
-  letter-spacing: -4px;
-  margin-bottom: 30px;
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-  font-size: clamp(18px, 3vw, 24px);
-  color: #aaa;
-  margin-bottom: 50px;
-}
-
-.btn-primary {
-  padding: 18px 45px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 700;
-}
-
-.clients-banner {
-  padding: 100px 20px;
-  background: rgba(59, 130, 246, 0.02);
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-  overflow: hidden;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-title {
-  font-size: clamp(36px, 7vw, 64px);
-  font-weight: 900;
-  letter-spacing: -2px;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.clients-logos {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.logo-track {
-  display: flex;
-  gap: 80px;
-  align-items: center;
-  animation: scrollLogos 25s linear infinite;
-  width: max-content;
-  padding: 20px 0;
-}
-
-@keyframes scrollLogos {
-  0% {
-    transform: translateX(0);
+  .trust-grid {
+    grid-template-columns: 1fr;
   }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.client-logo {
-  position: relative;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-.client-logo:hover {
-  transform: translateY(-15px) scale(1.1);
-}
-
-.client-logo-img {
-  max-width: 180px;
-  max-height: 80px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: brightness(0.9);
-}
-
-.client-logo:hover .client-logo-img {
-  filter: brightness(1.1) drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
-  transform: scale(1.08);
-}
-
-.contact-section {
-  padding: 120px 20px;
-  text-align: center;
-}
-
-.contact-container h2 {
-  font-size: clamp(40px, 8vw, 72px);
-  font-weight: 900;
-  margin-bottom: 30px;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-footer {
-  padding: 80px 20px 40px;
-  border-top: 1px solid rgba(59, 130, 246, 0.1);
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  nav {
-    padding: 20px 20px;
-  }
-  .nav-links, .cta-btn {
-    display: none;
+  .process-steps {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -1529,15 +1044,16 @@ footer {
 <div class="particles" id="particles"></div>
 
 <nav id="navbar">
-<img src="Black Logo.png" alt="FrameLab Logo" class="logo-image">
+  <img src="Black Logo.png" alt="FrameLab Logo" class="logo-image">
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
+    <li><a href="#why">Why Us</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="cta-btn">Get Started</a>
+  <a href="#contact" class="cta-btn">Build Your Brand</a>
   <div class="mobile-menu-btn">
     <span></span>
     <span></span>
@@ -1547,128 +1063,222 @@ footer {
 
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-badge">Premium Video Editing</div>
-    <h1>Welcome to <span class="gradient-text">FrameLab</span></h1>
-    <p class="hero-subtitle">We transform raw footage into cinematic masterpieces. Your vision, our expertise, extraordinary results.</p>
-    <div class="hero-buttons">
-      <a href="#portfolio" class="btn-primary">
-        <span>View Our Work</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
-      <a href="#services" class="btn-secondary">
-        <i class="fas fa-briefcase"></i>
-        <span>Our Services</span>
-      </a>
+    <div class="hero-text">
+      <div class="hero-badge">Full-Service Personal Brand Building</div>
+      <h1>Build a <span class="gradient-text">Personal Brand</span> That Opens Doors</h1>
+      <p class="hero-subtitle">From idea to final delivery - we handle everything. Stand out in a crowded digital world with cinematic content that positions you as an authority, attracts opportunities, and builds the influence you deserve.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">
+          <span>Start Your Journey</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#process" class="btn-secondary">
+          <i class="fas fa-play-circle"></i>
+          <span>How It Works</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-video">
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        controls
+        style="width: 100%; max-width: 320px; height: auto; border-radius: 24px; display: block; box-shadow: 0 30px 80px rgba(59, 130, 246, 0.3); margin: 0 auto; background: transparent;"
+      >
+        <source src="Ad 1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
 
-<section id="about" class="about-section">
-  <div class="about-container">
-    <h2>Who We Are</h2>
-    <p>FrameLab is a creative video editing agency dedicated to crafting compelling visual stories. We specialize in transforming raw footage into polished, professional content that captivates audiences and drives results.</p>
-    <div class="story-box">
-      <p>"Every frame tells a story. We make sure it's unforgettable."</p>
+<section id="why" class="why-section">
+  <div class="why-container">
+    <div class="section-header">
+      <div class="section-label">Why Personal Branding Matters</div>
+      <h2 class="section-title">Your Brand Is Your Future</h2>
+      <p class="section-subtitle">We don't just edit videos - we craft complete brand experiences. From concept development to final delivery, we handle every aspect of your content creation journey.</p>
     </div>
-    <p>With years of combined experience and a passion for storytelling, our team brings together technical excellence and creative vision. From documentary-style narratives to high-energy commercials, we deliver content that resonates.</p>
-    <div class="highlights-grid">
-      <div class="highlight-box">
-        <i class="fas fa-users"></i>
-        <h4>Expert</h4>
-        <p>Team</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h4>Attract Premium Opportunities</h4>
+        <p>A powerful personal brand makes clients, partners, and opportunities come to you. Stop chasing—start attracting.</p>
       </div>
-      <div class="highlight-box">
-        <i class="fas fa-rocket"></i>
-        <h4>Fast</h4>
-        <p>Delivery</p>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h4>Establish Authority</h4>
+        <p>Position yourself as the go-to expert in your field. Build credibility that makes people trust you before you even speak.</p>
       </div>
-      <div class="highlight-box">
-        <i class="fas fa-globe"></i>
-        <h4>Global</h4>
-        <p>Reach</p>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4>Build a Loyal Audience</h4>
+        <p>Create content that resonates and builds a community around your message. Turn followers into advocates.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h4>Increase Your Value</h4>
+        <p>A strong personal brand directly translates to higher fees, better deals, and more leverage in negotiations.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="clients-banner">
+<section id="services" class="services-section">
   <div class="section-header">
-    <h2 class="section-title">Our Elite Partners</h2>
-    <p style="color: #888; font-size: 18px;">Trusted by industry leaders worldwide</p>
+    <div class="section-label">What We Deliver</div>
+    <h2 class="section-title">End-to-End Brand Building</h2>
+    <p class="section-subtitle">From concept to completion - we handle every step. Content strategy, filming guidance, editing, graphics, and delivery. You focus on your message, we handle everything else.</p>
   </div>
-  <div class="clients-logos">
-    <div class="logo-track">
-      <div class="client-logo">
-        <img src="homeland-logo.png" alt="HomeLand" class="client-logo-img">
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-lightbulb"></i>
       </div>
-      <div class="client-logo">
-        <img src="editoz-logo.png" alt="Editoz Club" class="client-logo-img">
+      <h4>Content Strategy & Planning</h4>
+      <p>We start with your vision and develop a comprehensive content strategy. From scripting to storyboarding, we plan everything before filming begins.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-video"></i>
       </div>
-      <div class="client-logo">
-        <img src="accelarate-logo.png" alt="Accelarate" class="client-logo-img">
+      <h4>Filming & Direction Guidance</h4>
+      <p>Get expert guidance on filming your content. We provide shot lists, direction notes, and technical advice to ensure you capture perfect footage.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-film"></i>
       </div>
-      <div class="client-logo">
-        <img src="billionaires-logo.png" alt="Billionaires" class="client-logo-img">
+      <h4>Professional Video Editing</h4>
+      <p>Cinematic editing that brings your story to life. Dynamic pacing, smooth transitions, and professional cuts that keep viewers engaged.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-palette"></i>
       </div>
-      <div class="client-logo">
-        <img src="homeland-logo.png" alt="HomeLand" class="client-logo-img">
+      <h4>Color Grading & Visual Style</h4>
+      <p>Premium color grading that gives your content a signature look. Consistent visual branding across all your videos.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-magic"></i>
       </div>
-      <div class="client-logo">
-        <img src="editoz-logo.png" alt="Editoz Club" class="client-logo-img">
+      <h4>Motion Graphics & Design</h4>
+      <p>Custom graphics, lower thirds, titles, and animations that add polish and reinforce your brand identity.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-headphones"></i>
       </div>
-      <div class="client-logo">
-        <img src="accelarate-logo.png" alt="Accelarate" class="client-logo-img">
-      </div>
-      <div class="client-logo">
-        <img src="billionaires-logo.png" alt="Billionaires" class="client-logo-img">
-      </div>
+      <h4>Audio Design & Mixing</h4>
+      <p>Crystal-clear audio, music selection, sound effects, and professional mixing that enhances the viewing experience.</p>
     </div>
   </div>
 </section>
 
+<section class="trust-section">
+  <div class="section-header">
+    <div class="section-label">Our Commitment</div>
+    <h2 class="section-title">Why Choose FrameLab</h2>
+    <p class="section-subtitle">We're dedicated to delivering exceptional quality and helping you build a brand that makes an impact.</p>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h4>Quality Guaranteed</h4>
+      <p>We don't deliver until you're 100% satisfied. Unlimited revisions on all packages to ensure perfection.</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <i class="fas fa-clock"></i>
+      </div>
+      <h4>Fast Turnaround</h4>
+      <p>We understand timing matters. Quick delivery without compromising on quality or attention to detail.</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <h4>Transparent Process</h4>
+      <p>Clear communication every step of the way. You'll always know what's happening with your project.</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <i class="fas fa-heart"></i>
+      </div>
+      <h4>Passionate Team</h4>
+      <p>We genuinely care about your success. Your wins are our wins, and we're invested in your growth.</p>
+    </div>
+  </div>
+</section>
 
-<section class="stats-section">
-  <div class="stats-grid">
-    <div class="stat-item">
-      <div class="stat-number">5+</div>
-      <div class="stat-label">Years Experience</div>
+<section id="process" class="process-section">
+  <div class="section-header">
+    <div class="section-label">How We Work</div>
+    <h2 class="section-title">Complete Process, Start to Finish</h2>
+    <p class="section-subtitle">We handle every aspect of your content creation - from initial concept to final delivery.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-number">1</div>
+      <h4>Ideation & Strategy</h4>
+      <p>We start by understanding your goals and target audience. Together, we develop a content strategy and creative concepts that align with your brand vision.</p>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">500+</div>
-      <div class="stat-label">Projects Completed</div>
+    <div class="process-step">
+      <div class="step-number">2</div>
+      <h4>Pre-Production Planning</h4>
+      <p>We create detailed shot lists, scripts, and storyboards. You'll receive filming guidance, technical specs, and everything needed for perfect footage.</p>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">200+</div>
-      <div class="stat-label">Happy Clients</div>
+    <div class="process-step">
+      <div class="step-number">3</div>
+      <h4>Production & Editing</h4>
+      <p>Once footage is captured, our team crafts cinematic edits with color grading, motion graphics, sound design, and all finishing touches.</p>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">24/7</div>
-      <div class="stat-label">Support</div>
+    <div class="process-step">
+      <div class="step-number">4</div>
+      <h4>Review & Final Delivery</h4>
+      <p>You review, request changes, and we refine until perfect. Then we deliver in all required formats optimized for every platform.</p>
     </div>
   </div>
 </section>
 
 <section id="pricing" class="pricing-section">
   <div class="section-header">
-    <div class="section-label">Investment</div>
+    <div class="section-label">Investment in Your Brand</div>
     <h2 class="section-title">Pricing Plans</h2>
-    <p class="section-subtitle">Transparent pricing tailored to your needs. Choose the package that fits your vision.</p>
+    <p class="section-subtitle">Choose the package that fits your brand-building goals. All plans include unlimited revisions.</p>
   </div>
   <div class="pricing-grid">
     <div class="pricing-card">
       <div class="pricing-header">
-        <h3>Starter</h3>
+        <h3>Brand Launch</h3>
         <div class="price">
           <span class="currency">$</span>
-          <span class="amount">250</span>
-          <span class="period">/project</span>
+          <span class="amount">500</span>
+          <span class="period">/month</span>
         </div>
       </div>
       <ul class="pricing-features">
-        <li><i class="fas fa-check"></i> Up to 3 minutes video</li>
-        <li><i class="fas fa-check"></i> Basic color grading</li>
-        <li><i class="fas fa-check"></i> Sound mixing</li>
-        <li><i class="fas fa-check"></i> 2 revision rounds</li>
+        <li><i class="fas fa-check"></i> 4 videos per month</li>
+        <li><i class="fas fa-check"></i> Dedicated product owner</li>
+        <li><i class="fas fa-check"></i> Complete content strategy</li>
+        <li><i class="fas fa-check"></i> Filming guidance & shot list</li>
+        <li><i class="fas fa-check"></i> Professional editing</li>
+        <li><i class="fas fa-check"></i> Color grading & sound design</li>
+        <li><i class="fas fa-check"></i> Motion graphics & titles</li>
+        <li><i class="fas fa-check"></i> Unlimited revisions</li>
         <li><i class="fas fa-check"></i> 5-7 day delivery</li>
       </ul>
       <a href="#contact" class="pricing-btn">Get Started</a>
@@ -1676,241 +1286,173 @@ footer {
     <div class="pricing-card featured">
       <div class="featured-badge">Most Popular</div>
       <div class="pricing-header">
-        <h3>Professional</h3>
+        <h3>Brand Authority</h3>
         <div class="price">
           <span class="currency">$</span>
-          <span class="amount">1,000</span>
-          <span class="period">/project</span>
+          <span class="amount">1,200</span>
+          <span class="period">/month</span>
         </div>
       </div>
       <ul class="pricing-features">
-        <li><i class="fas fa-check"></i> Up to 10 minutes video</li>
-        <li><i class="fas fa-check"></i> Advanced color grading</li>
-        <li><i class="fas fa-check"></i> Motion graphics</li>
-        <li><i class="fas fa-check"></i> Premium sound design</li>
+        <li><i class="fas fa-check"></i> 10 premium videos per month</li>
+        <li><i class="fas fa-check"></i> Full content strategy & planning</li>
+       <li><i class="fas fa-check"></i> Dedicated product owner</li>
+        <li><i class="fas fa-check"></i> Pre-production support</li>
+        <li><i class="fas fa-check"></i> Cinematic editing & grading</li>
+        <li><i class="fas fa-check"></i> Custom motion graphics</li>
+        <li><i class="fas fa-check"></i> 20+ social media cutdowns</li>
         <li><i class="fas fa-check"></i> Unlimited revisions</li>
-        <li><i class="fas fa-check"></i> 1-3 day delivery</li>
+        <li><i class="fas fa-check"></i> Priority support</li>
       </ul>
       <a href="#contact" class="pricing-btn">Get Started</a>
     </div>
     <div class="pricing-card">
       <div class="pricing-header">
-        <h3>Enterprise</h3>
+        <h3>Brand Domination</h3>
         <div class="price">
           <span class="currency">$</span>
-          <span class="amount">Custom</span>
+          <span class="amount">2,500</span>
+          <span class="period">/month</span>
         </div>
       </div>
       <ul class="pricing-features">
-        <li><i class="fas fa-check"></i> Unlimited video length</li>
-        <li><i class="fas fa-check"></i> Cinematic grading</li>
-        <li><i class="fas fa-check"></i> Advanced VFX</li>
-        <li><i class="fas fa-check"></i> 3D animations</li>
-        <li><i class="fas fa-check"></i> Dedicated editor</li>
-        <li><i class="fas fa-check"></i> Priority support</li>
-        <li><i class="fas fa-check"></i> Rush delivery available</li>
+        <li><i class="fas fa-check"></i> Complete end-to-end service</li>
+       <li><i class="fas fa-check"></i> Dedicated product owner</li>
+        <li><i class="fas fa-check"></i> Unlimited video content</li>
+        <li><i class="fas fa-check"></i> Dedicated content strategist</li>
+        <li><i class="fas fa-check"></i> Dedicated video editor</li>
+        <li><i class="fas fa-check"></i> Advanced VFX & 3D graphics</li>
+        <li><i class="fas fa-check"></i> Full production guidance</li>
+        <li><i class="fas fa-check"></i> Same-day turnaround option</li>
+        <li><i class="fas fa-check"></i> 24/7 priority support</li>
       </ul>
       <a href="#contact" class="pricing-btn">Contact Us</a>
     </div>
   </div>
 </section>
 
-<section id="services" class="services-section">
+<section class="faq-section">
   <div class="section-header">
-    <div class="section-label">What We Offer</div>
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Comprehensive video editing solutions tailored to bring your creative vision to life with professional precision.</p>
+    <div class="section-label">Got Questions?</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know about working with us and building your personal brand.</p>
   </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-video"></i>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Why should I create a personal brand?</h4>
+        <i class="fas fa-chevron-down"></i>
       </div>
-      <h4>Commercial Editing</h4>
-      <p>High-impact commercial videos designed to elevate your brand and drive conversions. From concept to final cut, we create content that sells.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-book-open"></i>
-      </div>
-      <h4>Documentary Production</h4>
-      <p>Compelling documentary-style editing that captures authentic stories. We blend narrative depth with cinematic visuals for powerful storytelling.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-film"></i>
-      </div>
-      <h4>YouTube Content</h4>
-      <p>Engaging YouTube videos optimized for audience retention. Fast-paced editing, dynamic graphics, and hooks that keep viewers watching.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-palette"></i>
-      </div>
-      <h4>Color Grading</h4>
-      <p>Professional color correction and cinematic grading that sets the mood and enhances visual storytelling across every frame.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-magic"></i>
-      </div>
-      <h4>Motion Graphics</h4>
-      <p>Eye-catching animations and motion graphics that add depth and professionalism to your videos, making complex ideas simple and engaging.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-headphones"></i>
-      </div>
-      <h4>Audio Design</h4>
-      <p>Crystal-clear audio mixing, sound design, and music integration that complements your visuals and enhances the viewing experience.</p>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio" class="portfolio-section">
-  <div class="section-header">
-    <div class="section-label">Our Work</div>
-    <h2 class="section-title">Portfolio</h2>
-    <p class="section-subtitle">Explore our recent projects showcasing creativity, technical excellence, and storytelling mastery.</p>
-  </div>
-  <div class="portfolio-grid">
-    <a href="https://drive.google.com/file/d/1FlxdY762DcPF2LcQh1CxOTn06NJzknEL/view?usp=drive_link" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Documentary Style</span>
-        <h3>An Entrepreneur's Journey</h3>
-        <p class="project-description">Intimate documentary capturing a founder's journey from startup to success with cinematic color grading.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-    <a href="https://drive.google.com/file/d/1dQBfAAv7P47HbmLfKeKuG11y-ENwEV1V/view?usp=drive_link" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Explainer Video</span>
-        <h3>Tech Unboxing Experience</h3>
-        <p class="project-description">High-energy tech unboxing with slick reveals and engaging pacing that keeps viewers hooked.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-    <a href="https://youtu.be/E30NyI10xio?si=DTd48TeGchX6DC_B" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Commercial</span>
-        <h3>Cinematic Brand Story</h3>
-        <p class="project-description">High-end commercial with dramatic color grading and emotional storytelling that captures brand essence.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-    <a href="https://drive.google.com/file/d/1BhjXH-MwnmBgAh9XvCrBTqIuyNZznzLn/view?usp=drive_link" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Commercial</span>
-        <h3>Animated Product Showcase</h3>
-        <p class="project-description">Eye-catching animated advertisement with vibrant motion graphics and strategic pacing for brand impact.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-    <a href="https://drive.google.com/file/d/1I2AZTPTqZsYeagqvZn1di57lYnt33FsZ/view?usp=sharing" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Documentary</span>
-        <h3>Documentary Story</h3>
-        <p class="project-description">Compelling documentary with layered storytelling and cinematic pacing for an immersive experience.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-    <a href="https://www.youtube.com/watch?v=O5aYePFM-00&t=3s" target="_blank" rel="noopener" class="portfolio-card">
-      <div class="video-thumbnail">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="project-category">Cinematic</span>
-        <h3>Cinematic Vlog Experience</h3>
-        <p class="project-description">Stunning vlog with film-grade color grading and atmospheric storytelling that elevates everyday moments.</p>
-        <span class="portfolio-link">Watch Video <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section id="testimonials" class="testimonials-section">
-  <div class="section-header">
-    <div class="section-label">Client Feedback</div>
-    <h2 class="section-title">What Clients Say</h2>
-    <p class="section-subtitle">Real feedback from brands and creators who trusted us with their video projects.</p>
-  </div>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <div class="testimonial-stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
-      <p class="testimonial-text">"FrameLab took our brand video to the next level. The attention to detail and creative vision exceeded our expectations. Highly professional team."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">SM</div>
-        <div class="author-info">
-          <h5>Sarah Mitchell</h5>
-          <p>Marketing Director</p>
-        </div>
+      <div class="faq-answer">
+        <p>A strong personal brand makes opportunities come to you instead of chasing them. It positions you as an authority, builds trust with your audience, and opens doors to better clients, partnerships, and career opportunities. In today's digital world, your online presence is your reputation.</p>
       </div>
     </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What exactly is included in your services?</h4>
+        <i class="fas fa-chevron-down"></i>
       </div>
-      <p class="testimonial-text">"Fast turnaround without compromising quality. The color grading was phenomenal and really brought our documentary to life. Will definitely work with them again."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">DL</div>
-        <div class="author-info">
-          <h5>David Lee</h5>
-          <p>Film Producer</p>
-        </div>
+      <div class="faq-answer">
+        <p>Everything from idea to final delivery: content strategy, scripting, filming guidance with shot lists, professional editing, color grading, motion graphics, sound design, and multi-platform delivery. You focus on your message, we handle the rest.</p>
       </div>
     </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Do I need to film the content myself?</h4>
+        <i class="fas fa-chevron-down"></i>
       </div>
-      <p class="testimonial-text">"They understood our brand vision perfectly. The final video exceeded what we imagined. Great communication and creative problem-solving throughout."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">EB</div>
-        <div class="author-info">
-          <h5>Emily Brooks</h5>
-          <p>Brand Manager</p>
-        </div>
+      <div class="faq-answer">
+        <p>Yes, but we guide you completely. We provide shot lists, technical specs, and direction so you know exactly what to capture. Most clients use just their smartphone and achieve professional results with our guidance.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>How long does the process take?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>5-7 days for single projects. Monthly packages are faster (2-4 days per video) since we work continuously. Rush delivery available for urgent needs.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What if I don't like the final video?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>We offer unlimited revisions on all packages. We refine until you're 100% satisfied. Your success is our success.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What types of videos do you create?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>All personal brand content: brand stories, educational videos, social media Reels/Shorts/TikToks, podcast clips, testimonials, behind-the-scenes, product launches, and more. If it builds your brand, we create it.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Can you help with content strategy?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! Strategy is included in all packages. We help plan what to create, when to post, and how to maximize impact with a content calendar aligned to your goals.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What video formats do you deliver?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>All formats needed: landscape (16:9) for YouTube, vertical (9:16) for Reels/TikTok/Shorts, square (1:1) for feeds, plus any custom sizes. All optimized per platform.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Do you provide the music and graphics?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! Premium licensed music and custom motion graphics, titles, and animations are all included. No hidden fees.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Can I cancel my subscription anytime?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, no long-term contracts. Cancel or pause anytime with 30 days notice. We want you to stay because you love the results.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What if I need more videos than my package?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Easily upgrade to a higher tier or purchase additional videos at discounted rates. We're flexible and scale with your needs.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>How do we communicate during projects?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>WhatsApp for quick updates and email for detailed briefs. You have direct access to your product owner anytime. Clear, constant communication.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Do you work with clients worldwide?</h4>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! Fully online process via cloud storage (Google Drive, Dropbox). Time zones never an issue.</p>
       </div>
     </div>
   </div>
@@ -1918,9 +1460,8 @@ footer {
 
 <section id="contact" class="contact-section">
   <div class="contact-container">
-    <h2>Let's Create Together</h2>
-    <p>Ready to bring your vision to life? Whether it's a commercial campaign, documentary, YouTube series, or creative project, we're here to help you tell your story.</p>
-    <div class="contact-divider">Get in touch</div>
+    <h2>Ready to Build Your Brand?</h2>
+    <p>From concept to completion - we handle everything. Let's create content that positions you as an authority and attracts the opportunities you deserve. Your personal brand journey starts here.</p>
     <div class="contact-details">
       <div class="contact-item">
         <h4>Email</h4>
@@ -1949,9 +1490,9 @@ footer {
 <footer>
   <div class="footer-content">
     <div class="footer-logo">FrameLab</div>
-    <p style="color:#888;margin-bottom:30px">Video Editing Agency | Cinematic Storytelling Experts</p>
-    <p style="color:#888;margin-bottom:30px">Transforming visions into visual masterpieces, one frame at a time.</p>
-    <p style="color:#666;font-size:14px;margin-top:40px;padding-top:30px;border-top:1px solid rgba(59, 130, 246, 0.1)">© 2025 FrameLab. All rights reserved.</p>
+    <p style="color:#888;margin-bottom:30px">Complete Personal Brand Building - From Idea to Final Delivery</p>
+    <p style="color:#888;margin-bottom:30px">Strategy • Planning • Filming Guidance • Editing • Graphics • Sound Design</p>
+    <p style="color:#666;font-size:14px;margin-top:40px;padding-top:30px;border-top:1px solid rgba(0, 149, 255, 0.1)">© 2025 FrameLab. All rights reserved.</p>
   </div>
 </footer>
 
@@ -1985,37 +1526,7 @@ const obs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
-document.querySelectorAll('.service-card,.portfolio-card,.stat-item,.pricing-card').forEach(el => obs.observe(el));
-
-const animateCounter = (el, target, duration = 2000) => {
-  let start = 0;
-  const inc = target / (duration / 16);
-  const timer = setInterval(() => {
-    start += inc;
-    if (start >= target) {
-      el.textContent = target + (target === 24 ? '/7' : '+');
-      clearInterval(timer);
-    } else {
-      el.textContent = Math.floor(start) + (target === 24 ? '/7' : '+');
-    }
-  }, 16);
-};
-
-const sObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const n = e.target.querySelector('.stat-number');
-      const t = n.textContent;
-      const v = parseInt(t);
-      if (!e.target.classList.contains('animated')) {
-        animateCounter(n, v);
-        e.target.classList.add('animated', 'visible');
-      }
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.stat-item').forEach(s => sObs.observe(s));
+document.querySelectorAll('.service-card,.benefit-card,.trust-item,.process-step,.pricing-card').forEach(el => obs.observe(el));
 
 const mmb = document.querySelector('.mobile-menu-btn');
 const nl = document.querySelector('.nav-links');
@@ -2027,7 +1538,7 @@ if (mmb && nl) {
     mmb.classList.toggle('active');
     mo = !mo;
     if (mo) {
-      nl.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:80px;left:0;right:0;background:rgba(0,0,0,0.98);padding:30px;border-bottom:1px solid rgba(59, 130, 246, 0.2);z-index:999;gap:20px';
+      nl.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:80px;left:0;right:0;background:rgba(0,0,0,0.98);padding:30px;border-bottom:1px solid rgba(0, 149, 255, 0.2);z-index:999;gap:20px';
     } else {
       nl.style.cssText = '';
     }
@@ -2059,6 +1570,24 @@ if (mmb && nl) {
     }
   });
 }
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const faqItem = question.parentElement;
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't active
+    if (!isActive) {
+      faqItem.classList.add('active');
+    }
+  });
+});
 </script>
 </body>
 </html>
