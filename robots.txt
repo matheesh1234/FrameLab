@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Sitemap: https://framelabofficial.netlify.app/sitemap.xml
+```
+
+**2. `_redirects`** (place in `/public/` folder for www redirect):
+```
+https://www.framelabofficial.netlify.app/* https://framelabofficial.netlify.app/:splat 301!
+http://www.framelabofficial.netlify.app/* https://framelabofficial.netlify.app/:splat 301!
+http://framelabofficial.netlify.app/* https://framelabofficial.netlify.app/:splat 301!
+```
+
+**3. `_headers`** (for expires headers - place in `/public/` folder):
+```
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/*.mp4
+  Cache-Control: public, max-age=31536000, immutable
