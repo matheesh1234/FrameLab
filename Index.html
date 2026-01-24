@@ -33,7 +33,7 @@ body {
   cursor: none;
 }
 
-/* Custom Cursor */
+/* Custom Cursor - Disable on mobile/Android for performance */
 .custom-cursor {
   position: fixed;
   width: 20px;
@@ -44,7 +44,8 @@ body {
   display: none;
 }
 
-@media (min-width: 1024px) {
+/* Only enable on desktop with good performance */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
   .custom-cursor {
     display: block;
   }
@@ -62,6 +63,7 @@ body {
   border-bottom: 20px solid var(--blue);
   filter: drop-shadow(0 0 20px rgba(0, 185, 255, 0.8)) drop-shadow(0 0 40px rgba(0, 185, 255, 0.4));
   transition: transform 0.05s ease-out;
+  will-change: transform; /* GPU acceleration */
 }
 
 .cursor-glow {
@@ -74,6 +76,7 @@ body {
   background: radial-gradient(circle, rgba(0, 185, 255, 0.15) 0%, rgba(0, 185, 255, 0.08) 40%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
+  will-change: transform; /* GPU acceleration */
 }
 
 a:hover ~ .custom-cursor .cursor-dot,
@@ -262,6 +265,8 @@ button:hover ~ .custom-cursor .cursor-dot {
   background: linear-gradient(90deg, var(--blue), rgba(0, 185, 255, 0.4));
   z-index: 10000;
   box-shadow: 0 0 10px var(--blue);
+  will-change: width; /* GPU acceleration */
+  transform: translateZ(0); /* Force GPU */
 }
 
 /* Ambient Background */
@@ -646,6 +651,26 @@ section {
 .btn span {
   position: relative;
   z-index: 1;
+}
+
+  /* GPU Acceleration for better mobile performance */
+.hero-badge,
+.hero h1,
+.hero-subtitle,
+.hero-cta,
+.stat-card,
+.service-card,
+.process-step,
+.testimonial-card,
+.menu-nav li {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Remove will-change after animations complete to free resources */
+.animated-complete {
+  will-change: auto;
 }
 
 /* Stats Section */
@@ -1172,6 +1197,37 @@ body, html {
     gap: 25px;
   }
 }
+
+  /* Reduce motion and complexity on mobile for performance */
+@media (max-width: 1023px) {
+  /* Simplify animations */
+  * {
+    animation-duration: 0.3s !important;
+  }
+  
+  /* Disable expensive filters on mobile */
+  .cursor-dot {
+    filter: none !important;
+  }
+  
+  /* Simpler shadows */
+  .btn-primary:hover,
+  .stat-card:hover,
+  .service-card:hover,
+  .testimonial-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 185, 255, 0.2) !important;
+  }
+  
+  /* Disable grid overlay on mobile */
+  .grid-overlay {
+    display: none;
+  }
+  
+  /* Simpler noise */
+  .noise-overlay {
+    opacity: 0.01;
+  }
+}
 </style>
 </head>
 <body>
@@ -1464,31 +1520,58 @@ document.querySelectorAll('.menu-nav a').forEach(link => {
   });
 });
 
-// Custom Cursor
+// Custom Cursor - Only on desktop
 const cursor = document.querySelector('.custom-cursor');
 const cursorDot = document.querySelector('.cursor-dot');
 
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
+// Only run on desktop devices
+if (window.matchMedia('(min-width: 1024px) and (hover: hover)').matches) {
+  let mouseX = 0, mouseY = 0;
+  let cursorX = 0, cursorY = 0;
+  const speed = 0.2;
 
-document.querySelectorAll('a, button, .btn').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursorDot.style.transform = 'translate(-50%, -50%) rotate(-45deg) scale(1.5)';
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
   });
-  el.addEventListener('mouseleave', () => {
-    cursorDot.style.transform = 'translate(-50%, -50%) rotate(-45deg) scale(1)';
-  });
-});
 
-// Scroll progress
+  function animateCursor() {
+    cursorX += (mouseX - cursorX) * speed;
+    cursorY += (mouseY - cursorY) * speed;
+    
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+    
+    requestAnimationFrame(animateCursor);
+  }
+  
+  animateCursor();
+
+  document.querySelectorAll('a, button, .btn').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursorDot.style.transform = 'translate(-50%, -50%) rotate(-45deg) scale(1.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursorDot.style.transform = 'translate(-50%, -50%) rotate(-45deg) scale(1)';
+    });
+  });
+}
+
+// Optimized scroll progress with throttling
+let ticking = false;
+
 window.addEventListener('scroll', () => {
-  const h = document.documentElement;
-  const st = h.scrollTop || document.body.scrollTop;
-  const sh = h.scrollHeight || document.body.scrollHeight;
-  const percent = st / (sh - h.clientHeight) * 100;
-  document.querySelector('.scroll-progress').style.width = percent + '%';
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const h = document.documentElement;
+      const st = h.scrollTop || document.body.scrollTop;
+      const sh = h.scrollHeight || document.body.scrollHeight;
+      const percent = st / (sh - h.clientHeight) * 100;
+      document.querySelector('.scroll-progress').style.width = percent + '%';
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 // Intro animation
@@ -1715,6 +1798,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 </body>
 </html>
+
 
 
 
