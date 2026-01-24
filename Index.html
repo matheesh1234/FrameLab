@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>FrameLab - Built to be Remembered</title>
 <link rel="icon" type="image/png" href="Fav.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1097,6 +1097,56 @@ footer {
     padding: 14px 30px;
     font-size: 14px;
   }
+
+  /* Better mobile handling */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px !important;
+    letter-spacing: -2px;
+  }
+  
+  .intro-logo {
+    font-size: 48px !important;
+  }
+  
+  .section-title {
+    font-size: 32px !important;
+  }
+  
+  .glass-panel {
+    padding: 40px 20px;
+  }
+  
+  section {
+    padding: 60px 15px;
+  }
+  
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+}
+
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+  @media (max-width: 768px) {
+  .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
   
   .hero {
     padding-top: 100px;
@@ -1665,5 +1715,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 </body>
 </html>
+
 
 
